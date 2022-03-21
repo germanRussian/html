@@ -3,21 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+
 </head>
 <body>
 <a href="https://www.w3schools.com/" target="_self">Visit W3Schools!</a>
 <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
 <a href="https://www.w3schools.com/" target="_parent">Visit W3Schools!</a>
 <a href="https://www.w3schools.com/" target="_top">Visit W3Schools!</a>
+<a href= "tel : 01048587633">내 전화걸기</a>
+
 
 
 <h2>Absolute URLs</h2>
 <p><a href="https://www.w3.org/">W3C</a></p>
 <p><a href="https://www.google.com/">Google</a></p>
 
+
+
+
 <h2>Relative URLs</h2>
 <p><a href="html_images.asp">HTML Images</a></p>
 <p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+<button onclick="console.log(this)">버튼</button>
+<button onclick="location.href = 'html.html'" title="Go to HTML.HTML section">버튼(자바스크립트를 활용한 이동)</button>
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="a.html">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="b.html">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+
+
 
 
 </body>
