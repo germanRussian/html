@@ -8,33 +8,7 @@
 <form>
 .
 form elements<br>
-<input type="text">	<br>
-<input type="radio">	<br>
-<input type="checkbox">	<br>
-<input type="submit">	<br>
-<input type="button"><br>
-<input type="button"><br>
-<input type="checkbox"><br>
-<input type="color"><br>
-<input type="date"><br>
-<input type="datetime-local"><br>
-<input type="email"><br>
-<input type="file"><br>
-<input type="hidden"><br>
-<input type="image"><br>
-<input type="month"><br>
-<input type="number"><br>
-<input type="password"><br>
-<input type="radio"><br>
-<input type="range"><br>
-<input type="reset"><br>
-<input type="search"><br>
-<input type="submit"><br>
-<input type="tel"><br>
-<input type="text"><br>
-<input type="time"><br>
-<input type="url"><br>
-<input type="week"><br>
+
 </form>
 <br><br>
 <hr>
@@ -59,15 +33,29 @@ form elements<br>
   <label for="javascript">JavaScript</label>
 </form>
 
-<form action="" method = "post">
+<form action="" method = "post" autocomplete="on">
   <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
+  <input type="email" id="fname" name="fname" value="" required="required"><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value="Doe"><br><br>
   <input type="submit" value="Submit">
 </form>
 
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" multiple>
+  <option value="선택하세요." selected> 선택하세요. </option>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
 
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
 
 </body>
 </html>
