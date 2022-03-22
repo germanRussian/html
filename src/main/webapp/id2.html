@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+
+<h2>안녕하세요.</h2>
+<div id = "demo"></div>
+<button onclick="clickEvt()"> 클릭 글자 나옴.</button>
+<img src="a.jpg" id = "image">
+
+
+
+<script>
+
+
+
+
+function clickEvt(){
+	document.getElementById("image").src = "images/b.jpg"
+	
+	
+	document.getElementById("demo").innerHTML = "Hello JavaScript!" ;
+    document.getElementById("demo").style.fontSize = "25px";
+    document.getElementById("demo").style.color = "red";
+    document.getElementById("demo").style.backgroundColor = "yellow";
+	console.log("clickEvt가 출력됩니다.");
+	
+}
+
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+</body>
+</html>
